@@ -32,16 +32,16 @@ class MainActivity : AppCompatActivity() {
 
         val retrofitData = retrofitBuilder.getData("eminem")
 
-        retrofitData.enqueue(object : Callback<List<MyData>?> {
-            override fun onResponse(p0: Call<List<MyData>?>, response: Response<List<MyData>?>) {
+        retrofitData.enqueue(object : Callback<MyData?> {
+            override fun onResponse(p0: Call<MyData?>, response: Response<MyData?>) {
                 //if API call is success then this method is called
-                val dataList = response.body()
+                val dataList = response.body()?.data
                 val textView = findViewById<TextView>(R.id.helloText)
                 textView.text = dataList.toString()
                 Log.d("TAG: onResponse", "onResponse: " + response.body())
             }
 
-            override fun onFailure(p0: Call<List<MyData>?>, t: Throwable) {
+            override fun onFailure(p0: Call<MyData?>, t: Throwable) {
                 //if API call is fail then this method is called
                 Log.d("TAG: onFailure", "onFailure: " + t.message)
             }

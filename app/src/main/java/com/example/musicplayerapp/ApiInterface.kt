@@ -12,5 +12,5 @@ interface ApiInterface {
         "X-RapidAPI-Host: deezerdevs-deezer.p.rapidapi.com"
     )
     @GET("search")
-    fun getData(@Query("q") query: String ) : Call<List<MyData>>
+    fun getData(@Query("q") query: String ) : Call<MyData>
 }
