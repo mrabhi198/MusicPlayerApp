@@ -51,4 +51,6 @@ dependencies {
 
     //gson converter
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+    implementation("com.squareup.picasso:picasso:2.8")
 }
