@@ -1,4 +1,4 @@
 # MusicPlayerApp
 
 ## Download APK
-[Download the latest APK](https://github.com/your-username/your-repo-name/raw/main/release/MusicPlayerApp.apk)
+[Download the latest APK](https://github.com/mrabhi198/MusicPlayerApp/raw/main/release/MusicPlayerApp.apk)
